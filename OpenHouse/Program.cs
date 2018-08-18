@@ -33,7 +33,7 @@ namespace ConsoleApp12
 
             myAgent.Speak("Hello, my name is " + myAgent.Name + ". Welcome to this open house.");
             myAgent.Speak("Would you like to see the living room first? y/n?");
-            Console.ReadLine();
+            userResponse = Console.ReadLine();
 
             if (userResponse == "y")
             {
@@ -45,7 +45,7 @@ namespace ConsoleApp12
                 }
                 myAgent.Speak("This " + room1.Name + " is a beautiful open space blah blah blah.");
                 myAgent.Speak("Would you like to see " + room2.Name + "? y/n?");
-                Console.ReadLine();
+                userResponse = Console.ReadLine();
             }
 
             if (userResponse == "n")
@@ -55,7 +55,7 @@ namespace ConsoleApp12
                 myAgent.Speak("Just kidding. Would you like to see the " + room2.Name + "? y/n?");
             }
 
-            Console.ReadLine();
+            userResponse = Console.ReadLine();
 
             if (userResponse == "y")
             {
