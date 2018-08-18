@@ -9,10 +9,5 @@ namespace ConsoleApp12
         public string Name { get; set; }
         public string Size { get; set; }
         public bool Remodeled { get; set; }
-
-        public void Highlight(string showSomething)
-        {
-            Console.WriteLine(showSomething);
-        }
     }
 }
