@@ -6,15 +6,11 @@ namespace ConsoleApp12
     {
         static void Main(string[] args)
         {
-            Agent myAgent = new Agent();
-            myAgent.Name = "Dimitrius";
+            Agent myAgent = new Agent() { Name = "Dimitrius" };
 
             string userResponse = Console.ReadLine();
 
-            Room livingRoom = new Room();
-            livingRoom.Name = "living room";
-            livingRoom.Size = "400 sq. ft.";
-            livingRoom.Remodeled = true;
+            Room livingRoom = new Room() { Name = "living room", Size = "400 sq. ft.", Remodeled = true };
 
             Room kitchen = new Room();
             kitchen.Name = "kitchen";
