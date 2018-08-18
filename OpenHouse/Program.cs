@@ -11,25 +11,25 @@ namespace ConsoleApp12
 
             string userResponse = Console.ReadLine();
 
-            Room room1 = new Room();
-            room1.Name = "living room";
-            room1.Size = "400 sq. ft.";
-            room1.Remodeled = true;
+            Room livingRoom = new Room();
+            livingRoom.Name = "living room";
+            livingRoom.Size = "400 sq. ft.";
+            livingRoom.Remodeled = true;
 
-            Room room2 = new Room();
-            room2.Name = "kitchen";
-            room2.Size = "200 sq. ft.";
-            room2.Remodeled = true;
+            Room kitchen = new Room();
+            kitchen.Name = "kitchen";
+            kitchen.Size = "200 sq. ft.";
+            kitchen.Remodeled = true;
 
-            Room room3 = new Room();
-            room3.Name = "bathroom";
-            room3.Size = "100 sq. ft.";
-            room3.Remodeled = true;
+            Room bathroom = new Room();
+            bathroom.Name = "bathroom";
+            bathroom.Size = "100 sq. ft.";
+            bathroom.Remodeled = true;
 
-            Room room4 = new Room();
-            room4.Name = "bedroom";
-            room4.Size = "200 sq. ft.";
-            room4.Remodeled = false;
+            Room bedroom = new Room();
+            bedroom.Name = "bedroom";
+            bedroom.Size = "200 sq. ft.";
+            bedroom.Remodeled = false;
 
             myAgent.Speak("Hello, my name is " + myAgent.Name + ". Welcome to this open house.");
             myAgent.Speak("Would you like to see the living room first? y/n?");
@@ -37,14 +37,14 @@ namespace ConsoleApp12
 
             if (userResponse == "y")
             {
-                myAgent.Speak("The " + room1.Name + " is " + room1.Size + ".");
+                myAgent.Speak("The " + livingRoom.Name + " is " + livingRoom.Size + ".");
 
-                if (room1.Remodeled == true)
+                if (livingRoom.Remodeled == true)
                 {
                     myAgent.Speak("This room is newely remodeled.");
                 }
-                myAgent.Speak("This " + room1.Name + " is a beautiful open space blah blah blah.");
-                myAgent.Speak("Would you like to see " + room2.Name + "? y/n?");
+                myAgent.Speak("This " + livingRoom.Name + " is a beautiful open space blah blah blah.");
+                myAgent.Speak("Would you like to see " + kitchen.Name + "? y/n?");
                 userResponse = Console.ReadLine();
             }
 
@@ -52,14 +52,14 @@ namespace ConsoleApp12
             {
                 myAgent.Speak("Go home!");
                 Console.WriteLine();
-                myAgent.Speak("Just kidding. Would you like to see the " + room2.Name + "? y/n?");
+                myAgent.Speak("Just kidding. Would you like to see the " + kitchen.Name + "? y/n?");
             }
 
             userResponse = Console.ReadLine();
 
             if (userResponse == "y")
             {
-                myAgent.Speak("This " + room2.Name + " is " + room2.Size + ".");
+                myAgent.Speak("This " + kitchen.Name + " is " + kitchen.Size + ".");
                 Console.ReadLine();
             }
 
